@@ -11,12 +11,11 @@ const findFrequency = function (array) {
   // your code here - don't forget to return an object!
   const counts = {};
   const result = {};
-  let lst = [];
   for (let i = 0; i < array.length; i++) {
     counts[array[i]] = counts[array[i]] ? counts[array[i]] + 1 : 1;
   }
 
-  lst = Object.values(counts);
+  const lst = Object.values(counts);
 
   let max = Math.max(...lst);
   let min = Math.min(...lst);
