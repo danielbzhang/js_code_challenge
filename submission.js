@@ -9,8 +9,8 @@ const findSum = function (array) {
 
 const findFrequency = function (array) {
   // your code here - don't forget to return an object!
-  let counts = {};
-  let result = {};
+  const counts = {};
+  const result = {};
   let lst = [];
   for (let i = 0; i < array.length; i++) {
     counts[array[i]] = counts[array[i]] ? counts[array[i]] + 1 : 1;
@@ -40,16 +40,7 @@ const isPalindrome = function (str) {
 
 const largestPair = function (array) {
   // your code here - don't forget to return a number!
-//   if (array.length === 1) {
-//     return array[0];
-//   } else if (array.length === 2) {
-//     return array[0] * array[1];
-//   } else if (array.length > 2) {
-//     for (let i in array) {
-//       let max = array[0] * array[1];
-//       if 
-//     }
-//   }
+
 };
 
 const removeParenth = function (str) {
