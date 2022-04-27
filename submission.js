@@ -66,7 +66,6 @@ const removeParenth = function (str) {
   }
   
   let omitStr = str.substring(start, finish+1);
-  console.log(omitStr);
   return str.replace(omitStr, "");
 };
 
