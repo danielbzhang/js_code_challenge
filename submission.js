@@ -58,15 +58,19 @@ const removeParenth = function (str) {
   let finish;
   for ( let i in str) {
       if (str[i] === '(') {
-          start = i;
+          start = parseInt(i);
       }
       if (str[i] === ')') {
-          finish = i;
+          finish = parseInt(i);
       }
   }
-  let str1 = str.substr(start, finish+1);
-  return str.replace(str1, "");
+  
+  let omitStr = str.substring(start, finish+1);
+  console.log(omitStr);
+  return str.replace(omitStr, "");
 };
+
+
 
 const scoreScrabble = function (str) {
   // your code here - don't forget to return a number!
